@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        Hotel meuHotel = new Hotel("Grand Hotel Maringá", "Avenida Brasil");
+        Hotel meuHotel = new Hotel("Grand Hotel Maringá", "Avenida Brasil",
+            502, "Deluxe", 300.00);
 
         meuHotel.adicionarQuarto(101, "Standard", 200.00);
         meuHotel.adicionarQuarto(202, "Standard", 200.00);

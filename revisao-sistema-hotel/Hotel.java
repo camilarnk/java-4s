@@ -5,10 +5,12 @@ public class Hotel {
     private String endereco;
     private ArrayList<Quarto> quartos;
     
-    public Hotel(String nome, String endereco) {
+    public Hotel(String nome, String endereco, int numeroQuarto, String tipoQuarto,
+        double precoPorNoiteQuarto) {
         this.nome = nome;
         this.endereco = endereco;
         this.quartos = new ArrayList<>();
+        this.quartos.add(new Quarto(numeroQuarto, tipoQuarto, precoPorNoiteQuarto));
     }
 
     public void adicionarQuarto(int numeroQuarto, String tipoQuarto, double precoPorNoiteQuarto) {
