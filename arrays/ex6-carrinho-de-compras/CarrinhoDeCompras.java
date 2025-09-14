@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class CarrinhoDeCompras {
-    private List<Livro> itens;
+    private ArrayList<Livro> itens;
 
     public CarrinhoDeCompras() {
         this.itens = new ArrayList<>();
@@ -25,12 +24,14 @@ public class CarrinhoDeCompras {
         if(itens.isEmpty()){
             System.out.println("O carrinho está vazio");
         }else{
+            System.out.println("---------------------------------------");
             System.out.println("Livros no carrinho:");
             // tipo, elemento qualquer, array a percorrer
             for(Livro livro : itens) {
                 System.out.printf("Título: %s \nAutor: %s \nPreço: %.2f\n",
                 livro.getTitulo(), livro.getAutor(), livro.getPreco());
             }
+            System.out.println("---------------------------------------");
         }
     }
 
