@@ -21,7 +21,7 @@ public class ContaBancaria {
 
     public void sacar(double valor) {
 
-        if(this.saldo >= valor) {
+        if(this.saldo >= valor && valor > 0) {
             this.saldo -= valor;
             System.out.printf("\nR$%.2f sacados da conta %s.\n", valor, this.numero);
         } else {
@@ -31,8 +31,8 @@ public class ContaBancaria {
 
     public void transferir(ContaBancaria destino, double valor) {
 
-        if(this.saldo >= valor && destino != null && destino.getNumero() != this.numero) {
-            destino.setSaldoDestino(valor);
+        if(this.saldo >= valor && destino != null && !destino.getNumero().equals(this.numero)) {
+            destino.receberTransferencia(valor);
             this.saldo -= valor;
             System.out.printf("\nR$%.2f transferidos de %s para %s\n",
             valor, this.cliente.getNome(), destino.getCliente().getNome());
@@ -53,7 +53,7 @@ public class ContaBancaria {
         return this.cliente;
     }
 
-    public void setSaldoDestino(double valor) {
+    public void receberTransferencia(double valor) {
         this.saldo += valor;
     }
     
