@@ -16,6 +16,15 @@ ou método do objeto atual, enquanto o static compartilha a memória com todas a
 não há quem o this de um static representar.
 
 
+10. Decisão de Design (Conceitual): Você precisa criar uma funcionalidade para calcular juros
+compostos. O método seria calcularJurosCompostos(double principal, double taxa, int periodos).
+Você criaria uma classe CalculadoraDeJuros para ser instanciada (new CalculadoraDeJuros()) ou a
+implementaria como um método estático em uma classe FinanceiroUtil? Justifique sua decisão de
+design.
+
+Implementaria com um método estático de uma classe utilitária, visto que para fazer essa função de
+cálculo, não é necessário criar um objeto, e sim apenas chamar um método que faz essa operação de
+forma independente.
 
 */
 
