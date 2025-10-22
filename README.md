@@ -15,3 +15,6 @@ Exercícios e anotações da máteria Programação Orientada a Objetos, 4º sem
 - Encapsulamento, construtores e métodos  
 - Composição e Agregação
 - Uso de `ArrayList` e listas dinâmicas
+- Static, Final e Constantes
+- Herança
+- Polimorfismo
