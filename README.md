@@ -18,3 +18,5 @@ Exercícios e anotações da máteria Programação Orientada a Objetos, 4º sem
 - Static, Final e Constantes
 - Herança
 - Polimorfismo
+- Interface
+- JDBC
